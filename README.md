@@ -16,7 +16,7 @@ The best performing model was a VotingEnsemble AutoML model.
 - Early stopping Bandit Policiy ensures that any run that doesn't fall within the slack factor or slack amount of the evaluation metric with respect to the best performing run will be terminated
 
 ## AutoML
-VotingEnsemble AutoML model implements soft-voting, which uses weighted averages of multiple fitted models from the previous child runs. The best non ensemble AutoML model was MaxAbsScaler, XGBoostClassifier which is a boosted tree model. 
+VotingEnsemble AutoML model implements soft-voting, which uses weighted averages of multiple fitted models from the previous child runs. The Voting Ensemble model has achieved accuracy of 0.916. The best non-ensemble AutoML model was MaxAbsScaler, LightGBM which is a boosted tree model with accuracy 0.915.
 
 ## Pipeline comparison
 The relatively simple Scikit-learn binary logistic model has achieved good performance despite the linear relationship between the predictor variables and the log odds of the event that y=1. The more advanced best VotingEnsemble AutoML model has achieved slightly better accuracy of 0.916 vs 0.910 of Logistic Regression. 
