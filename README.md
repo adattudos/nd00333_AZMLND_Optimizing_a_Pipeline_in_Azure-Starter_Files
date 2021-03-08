@@ -24,7 +24,19 @@ The relatively simple Scikit-learn binary logistic model has achieved good perfo
 ## Future work
 Potential future improvements include but are not limited to:
 - Addressing class imbalance in training data set
+  - AutoML Class balancing detection data guardrail has alerted since the size of the smallest class in the training data set is 3692 out of 32950.
+  - Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class.
+  - Learn more about imbalanced data: https://aka.ms/AutomatedMLImbalancedData
 - Hyperparameter tuning of the best model
+  - By optimizing the hyperparameters of the best AutoML model further improvements are expected in model performance
 - Exploring feature importance
+  - This would be helpful to get futher insights into this data set
 - Analyze confusion matrices
+  - To get a better understanding of how and why some models might fail to predict the true classes
 - Training models longer or on larger cluster
+  - For best results larger models and fine grained hyperparameter optimization might need more computing cycles
+
+
+```
+
+```
